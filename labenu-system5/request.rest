@@ -1,0 +1,37 @@
+### create school class (module default 0) 1 to 6
+
+POST http://localhost:3003/class/create
+Content-Type: application/json
+
+{
+    "id": "02",
+    "name": "King",
+    "module": "0"
+}
+
+### create student class
+POST http://localhost:3003/student/create
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john@email.com",
+    "birthDate":"1995-02-02",
+    "class_id":"01"
+}
+
+### edit school class module
+
+POST http://localhost:3003/class/edit
+Content-Type: application/json
+
+{
+    "module": 
+}
+
+### query school class where module > 0 (!0)
+
+GET http://localhost:3003/activeclass
+Content-Type: application/json
+
+

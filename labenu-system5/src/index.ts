@@ -1,8 +1,11 @@
 import app from "./app"
-import getWellMessage from "./endpoints/welcome"
+import createSchoolClass from "./endpoints/createSchoolClass"
+import createStudent from "./endpoints/createStudent"
 
 //ENDPOINTS API
-app.get("/welcome", getWellMessage)
+app.post("/class/create", createSchoolClass)
+app.post("/student/create", createStudent)
+
 
 
 
