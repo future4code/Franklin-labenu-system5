@@ -1,4 +1,7 @@
 node_modules
-package-lock.json
 build
+
 .env
+
+.vscode
+requests.rest

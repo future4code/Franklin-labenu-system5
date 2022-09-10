@@ -4,8 +4,8 @@ POST http://localhost:3003/class/create
 Content-Type: application/json
 
 {
-    "id": "02",
-    "name": "King",
+    "id": "01",
+    "name": "Queen",
     "module": "0"
 }
 
@@ -22,11 +22,12 @@ Content-Type: application/json
 
 ### edit school class module
 
-POST http://localhost:3003/class/edit
+PUT http://localhost:3003/class/edit
 Content-Type: application/json
 
 {
-    "module": 
+    "id": "10",
+    "module": "01" 
 }
 
 ### query school class where module > 0 (!0)
