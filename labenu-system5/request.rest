@@ -20,6 +20,17 @@ Content-Type: application/json
     "class_id":"01"
 }
 
+### create teacher class
+POST http://localhost:3003/teacher/create
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john@email.com",
+    "birthDate":"1995-02-02",
+    "class_id":"01"
+}
+
 ### edit school class module
 
 PUT http://localhost:3003/class/edit
@@ -35,4 +46,8 @@ Content-Type: application/json
 GET http://localhost:3003/activeclass
 Content-Type: application/json
 
+### list all teachers
+
+GET http://localhost:3003/teacher/all
+Content-Type: application/json
 
