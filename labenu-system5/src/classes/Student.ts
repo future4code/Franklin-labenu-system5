@@ -14,4 +14,10 @@ export class Student extends BaseDatabase {
             .where({ email }) 
         return result 
     }
+
+    public getByName = async (name: string) => {
+        const [result] = await this.getConnection()('student')
+            .where({ name }) 
+        return result 
+    }
 }

@@ -14,9 +14,9 @@ POST http://localhost:3003/student/create
 Content-Type: application/json
 
 {
-    "name": "John Doe",
-    "email": "john@email.com",
-    "birthDate":"1995-02-02",
+    "name": "Janne",
+    "email": "janne@email.com",
+    "birthDate":"1995-05-12",
     "class_id":"01"
 }
 
