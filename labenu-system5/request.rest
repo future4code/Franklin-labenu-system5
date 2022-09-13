@@ -41,6 +41,16 @@ Content-Type: application/json
     "module": "01" 
 }
 
+### edit student class module
+
+PUT http://localhost:3003/student/edit
+Content-Type: application/json
+
+{
+    "email": "janne@email.com",
+    "class_id": "03" 
+}
+
 ### query school class where module > 0 (!0)
 
 GET http://localhost:3003/activeclass

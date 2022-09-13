@@ -20,4 +20,12 @@ export class Student extends BaseDatabase {
             .where({ name }) 
         return result 
     }
+
+    public editStudentModule = async (email: string, columnsUpdate: {class_id: string}): Promise<number> => {
+        const affectRows = await this.getConnection()
+            ('student')
+            .update(columnsUpdate)
+            .where({email})
+            return Number(affectRows)
+    }
 }
