@@ -51,3 +51,10 @@ Content-Type: application/json
 GET http://localhost:3003/teacher/all
 Content-Type: application/json
 
+### list all getStudentByName
+
+GET http://localhost:3003/getStudentByName/Janne
+Content-Type: application/json
+
+
+

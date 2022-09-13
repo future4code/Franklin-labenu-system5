@@ -15,7 +15,7 @@ export class Student extends BaseDatabase {
         return result 
     }
 
-    public getByName = async (name: string) => {
+    public getByName = async (name: string): Promise<user> => {
         const [result] = await this.getConnection()('student')
             .where({ name }) 
         return result 

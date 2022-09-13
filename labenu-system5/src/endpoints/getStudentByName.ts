@@ -9,13 +9,16 @@ export default async function getStudentByName(
     res: Response
 ): Promise<void> {
     try {
-        const name = req.body
+        const name = req.params.name
         const student = new Student()
         const result = await student.getByName(name)
 
         res.send({
             result: {
-                name: result.name
+                name: result.name,
+                email: result.email,
+                birthDate: result.birthDate,
+                class_id: result.class_id
 
             }
         })
