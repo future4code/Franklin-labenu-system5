@@ -1,0 +1,70 @@
+### create school class (module default 0) 1 to 6
+
+POST http://localhost:3003/class/create
+Content-Type: application/json
+
+{
+    "id": "01",
+    "name": "Queen",
+    "module": "0"
+}
+
+### create student class
+POST http://localhost:3003/student/create
+Content-Type: application/json
+
+{
+    "name": "Janne",
+    "email": "janne@email.com",
+    "birthDate":"1995-05-12",
+    "class_id":"01"
+}
+
+### create teacher class
+POST http://localhost:3003/teacher/create
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john@email.com",
+    "birthDate":"1995-02-02",
+    "class_id":"01"
+}
+
+### edit school class module
+
+PUT http://localhost:3003/class/edit
+Content-Type: application/json
+
+{
+    "id": "10",
+    "module": "01" 
+}
+
+### edit student class module
+
+PUT http://localhost:3003/student/edit
+Content-Type: application/json
+
+{
+    "email": "janne@email.com",
+    "class_id": "03" 
+}
+
+### query school class where module > 0 (!0)
+
+GET http://localhost:3003/activeclass
+Content-Type: application/json
+
+### list all teachers
+
+GET http://localhost:3003/teacher/all
+Content-Type: application/json
+
+### list all getStudentByName
+
+GET http://localhost:3003/getStudentByName/Janne
+Content-Type: application/json
+
+
+
